@@ -1,0 +1,32 @@
+{
+    "name": "Sundy/laradmin",
+    "description": "Laradmin is a laravel package for can be generated fast backend management panel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sundy",
+            "email": "287715706@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "zhuzhichao/ip-location-zh": "^2.4",
+        "predis/predis": "^1.1",
+        "laracasts/flash": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sundy\\Laradmin\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sundy\\Laradmin\\AdminServiceProvider"
+            ]
+        }
+    }
+}
